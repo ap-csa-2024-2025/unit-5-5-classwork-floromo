@@ -12,25 +12,25 @@ public class Person {
     public void setFirstName(String firstName){
         this.firstName = firstName;
     }
-    public void getFirstName(){
+    public String getFirstName(){
         return firstName;
     }
 
     public void setLastName(String lastName){
         this.lastName = lastName;
     }
-    public void getLastName(){
+    public String getLastName(){
         return lastName;
     }
 
-    public int setAge(int age){
+    public void setAge(int age){
         this.age = age;
     }
     public int getAge(){
         return age;
     }
 
-    public int setSSN(int SSN){
+    public void setSSN(int SSN){
         this.SSN = SSN;
     }
     public int getSSN(){
@@ -38,6 +38,6 @@ public class Person {
     }
 
     public String toString(){
-        
+        return "Output: \nSSN: " + SSN + "\n\tName: " + firstName + " " + lastName + "\n\tAge: " + age;
     }
 }
